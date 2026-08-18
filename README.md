@@ -39,14 +39,6 @@ Restart DSH Web after updating if the new client bundle is not picked up automat
 
 See [README.zh-CN.md](README.zh-CN.md) and [docs/architecture.md](docs/architecture.md) for details and DSH `0.1.0-rc.7` limitations.
 
-## Development
-
-```powershell
-npm install
-npm run check
-npm run build
-```
-
 ## License
 
 MIT. Third-party UI/theme plugins retain their own licenses.

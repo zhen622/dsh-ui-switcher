@@ -48,14 +48,6 @@ dsh plugin --profile web update @dsh-external/dsh-ui-switcher
 
 技术说明见 [docs/architecture.md](docs/architecture.md)。
 
-## 开发
-
-```powershell
-npm install
-npm run check
-npm run build
-```
-
 ## 许可证
 
 切换器使用 MIT 许可证。被发现和切换的第三方 UI/主题仍适用其各自许可证。
