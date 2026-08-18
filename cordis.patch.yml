@@ -1,0 +1,3 @@
+- insert:
+    - id: ui-switcher
+      name: '@dsh-external/dsh-ui-switcher'
