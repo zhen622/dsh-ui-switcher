@@ -9,7 +9,7 @@
 打开 **PowerShell**，运行这一条命令即可：
 
 ```powershell
-npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
+dsh plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
 ```
 
 首次安装后重启 DSH Web，然后进入：
@@ -25,7 +25,7 @@ npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web add "https://github.com/
 通过 DSH 转发的 pnpm 更新命令更新已安装包：
 
 ```powershell
-npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web update @dsh-external/dsh-ui-switcher
+dsh plugin --profile web update @dsh-external/dsh-ui-switcher
 ```
 
 如果 DSH 没有自动加载新的 client bundle，更新后重启一次 DSH Web。

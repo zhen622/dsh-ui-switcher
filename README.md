@@ -9,7 +9,7 @@ Automatically discovers DeepSeek Harness Web UI/theme plugins and lets you keep 
 Open **PowerShell** and run this single command:
 
 ```powershell
-npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
+dsh plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
 ```
 
 Restart DSH Web after the first installation. Then open:
@@ -25,7 +25,7 @@ Choose an installed UI or **Original DSH**, then refresh the browser page.
 Update the installed package through DSH's pnpm forwarding command:
 
 ```powershell
-npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web update @dsh-external/dsh-ui-switcher
+dsh plugin --profile web update @dsh-external/dsh-ui-switcher
 ```
 
 Restart DSH Web after updating if the new client bundle is not picked up automatically.
