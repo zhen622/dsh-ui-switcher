@@ -4,12 +4,22 @@
 
 自动发现 DeepSeek Harness Web 已安装的 UI/主题插件。在不卸载插件的情况下保证一次只启用一个界面，并提供“DSH 原版界面”安全回退和本地中文别名。
 
-## Windows 安装
+## 安装
 
-打开 **PowerShell**，运行这一条命令即可：
+### 快速安装
+
+直接告诉 DSH：
+
+```text
+安装这个插件包：https://github.com/zhen622/dsh-ui-switcher
+```
+
+### 手动安装
 
 ```powershell
-dsh plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
+git clone https://github.com/zhen622/dsh-ui-switcher.git
+cd dsh-ui-switcher
+dsh plugin --profile web add .
 ```
 
 首次安装后重启 DSH Web，然后进入：

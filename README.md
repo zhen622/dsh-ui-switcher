@@ -4,12 +4,22 @@
 
 Automatically discovers DeepSeek Harness Web UI/theme plugins and lets you keep them installed while enabling only one at a time. Includes an **Original DSH** safety fallback and local custom display-name aliases.
 
-## Install on Windows
+## Installation
 
-Open **PowerShell** and run this single command:
+### Quick install
+
+Tell your DSH:
+
+```text
+Install this plugin package: https://github.com/zhen622/dsh-ui-switcher
+```
+
+### Manual installation
 
 ```powershell
-dsh plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
+git clone https://github.com/zhen622/dsh-ui-switcher.git
+cd dsh-ui-switcher
+dsh plugin --profile web add .
 ```
 
 Restart DSH Web after the first installation. Then open:
