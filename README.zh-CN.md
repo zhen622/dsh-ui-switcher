@@ -6,12 +6,10 @@
 
 ## Windows 安装
 
-打开 **命令提示符（CMD）**，依次运行：
+打开 **PowerShell**，运行这一条命令即可：
 
-```cmd
-cd /d D:\Github
-git clone https://github.com/zhen622/dsh-ui-switcher.git
-cmd /c "dsh plugin --profile web add D:\Github\dsh-ui-switcher"
+```powershell
+npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
 ```
 
 首次安装后重启 DSH Web，然后进入：
@@ -22,13 +20,12 @@ cmd /c "dsh plugin --profile web add D:\Github\dsh-ui-switcher"
 
 选择某个已安装界面或“DSH 原版界面”，再刷新浏览器页面即可。
 
-如果仓库没有放在 `D:\Github`，请把命令中的路径换成真实本地路径。已经下载过仓库时，不要重复执行 `git clone`，直接运行 `dsh plugin ... add` 即可。
-
 ## 更新
 
-```cmd
-cd /d D:\Github\dsh-ui-switcher
-git pull --ff-only
+通过 DSH 转发的 pnpm 更新命令更新已安装包：
+
+```powershell
+npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web update @dsh-external/dsh-ui-switcher
 ```
 
 如果 DSH 没有自动加载新的 client bundle，更新后重启一次 DSH Web。
@@ -53,7 +50,7 @@ git pull --ff-only
 
 ## 开发
 
-```cmd
+```powershell
 npm install
 npm run check
 npm run build

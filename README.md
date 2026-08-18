@@ -6,12 +6,10 @@ Automatically discovers DeepSeek Harness Web UI/theme plugins and lets you keep 
 
 ## Install on Windows
 
-Open **Command Prompt (CMD)** and run:
+Open **PowerShell** and run this single command:
 
-```cmd
-cd /d D:\Github
-git clone https://github.com/zhen622/dsh-ui-switcher.git
-cmd /c "dsh plugin --profile web add D:\Github\dsh-ui-switcher"
+```powershell
+npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web add "https://github.com/zhen622/dsh-ui-switcher.git"
 ```
 
 Restart DSH Web after the first installation. Then open:
@@ -22,13 +20,12 @@ Settings → Interface
 
 Choose an installed UI or **Original DSH**, then refresh the browser page.
 
-If you cloned the repository somewhere else, replace `D:\Github\dsh-ui-switcher` with its actual local path.
-
 ## Update
 
-```cmd
-cd /d D:\Github\dsh-ui-switcher
-git pull --ff-only
+Update the installed package through DSH's pnpm forwarding command:
+
+```powershell
+npx.cmd -y @deepseek-ai/dsh@latest plugin --profile web update @dsh-external/dsh-ui-switcher
 ```
 
 Restart DSH Web after updating if the new client bundle is not picked up automatically.
@@ -44,7 +41,7 @@ See [README.zh-CN.md](README.zh-CN.md) and [docs/architecture.md](docs/architect
 
 ## Development
 
-```cmd
+```powershell
 npm install
 npm run check
 npm run build
